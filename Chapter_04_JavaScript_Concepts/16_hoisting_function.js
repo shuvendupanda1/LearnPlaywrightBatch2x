@@ -1,0 +1,7 @@
+function test(){ // function decelarition or function definition
+    console.log(test);
+    let test = "Test function";
+    console.log("Inside function: ", test);
+}  //  is this the hoisting example for function declaration or function definition? Yes, this is an example of hoisting for function declarations. In JavaScript, function declarations are hoisted to the top of their scope, which means that the entire function definition is available before any code is executed. However, in this case, the variable 'test' declared with 'let' inside the function is not hoisted in the same way as a function declaration. The variable 'test' is hoisted but not initialized, which leads to a ReferenceError when trying to access it before initialization.
+// why not undefined? Because 'let' and 'const' declarations are hoisted but not initialized, they are in a "temporal dead zone" from the start of the block until the declaration is processed. During this time, accessing the variable will result in a ReferenceError, rather than returning 'undefined' as with 'var' declarations. In this example, when we try to log 'test' before it is initialized, it throws a ReferenceError instead of returning 'undefined'.
+test(); // calling function test, Output: [Function: test] and then ReferenceError: Cannot access 'test' before initialization
