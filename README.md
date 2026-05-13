@@ -39,6 +39,13 @@ https://github.com/shuvendupanda1/LearnPlaywrightBatch2x.git
   - `14_let_scope.js` - let scope with global vs block
   - `15_Hoisting.js` - Hoisting with var
   - `16_hoisting_function.js` - Hoisting with function declarations
+  - `17_Hoisted_TDZ` - Hoisting & Temporal Dead Zone with var in block scope
+  - `19_let_hosting.js` - let hosting behavior
+  - `Hoisting_and_TDZ.js` - Combined hoisting & TDZ examples
+- `Chapter_05_literal_operator_identifiers/` - Literals, Operators & Identifiers
+  - `18_literals-operators-identifiers.js` - Comprehensive literals, operators & identifiers with tests
+  - `19_literial.js` - Literal examples
+  - `20_Template_literal.js` - Template literal examples
 
 ## Important JavaScript Keywords for QA Testing
 
