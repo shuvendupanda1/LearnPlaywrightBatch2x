@@ -51,6 +51,12 @@ testIdentifiers();
 const str1 = 'single quotes';        // string literal
 const str2 = "double quotes";        // string literal
 const str3 = `template literal ${1 + 1}`; // template literal
+console.log(typeof str1); // "string");
+console.log(typeof str2); // "string");
+console.log(typeof str3); // "string");
+
+// what is difference "" and ''?
+// we used single code in javascript to avoid escaping double quotes inside the string.
 
 // --- Numeric Literals ---
 const intLiteral = 42;               // integer
@@ -60,28 +66,48 @@ const binaryLiteral = 0b1010;        // binary -> 10
 const octalLiteral = 0o77;           // octal -> 63
 const sciLiteral = 1.5e3;            // scientific -> 1500
 
+console.log(typeof intLiteral); // "number"
+console.log(typeof floatLiteral); // "number"
+console.log(typeof hexLiteral); // "number"
+console.log(typeof binaryLiteral); // "number"
+console.log(typeof octalLiteral); // "number"
+console.log(typeof sciLiteral); // "number"
+
+let pi=3.14; // valid identifier, but not a constant
+  console.assert(pi === 3.14, 'pi should be 3.14');
+  console.log(typeof pi); // "number"
+
 // --- Boolean Literals ---
 const boolTrue = true;
 const boolFalse = false;
 
+console.log(typeof boolTrue); // "boolean"
+console.log(typeof boolFalse); // "boolean"
+
 // --- Null & Undefined ---
 const nullValue = null;
 let undefinedValue;
+console.log(typeof nullValue); // "object"
+console.log(typeof undefinedValue); // "undefined"
 
 // --- BigInt Literal ---
 const bigInt = 9007199254740991n;
+console.log(typeof bigInt); // "bigint"
 
 // --- Object Literal ---
 const person = {
   name: 'Alice',
   age: 30,
 };
+console.log(typeof person); // "object"
 
 // --- Array Literal ---
 const numbers = [1, 2, 3];
+console.log(typeof numbers); // "object"
 
 // --- RegExp Literal ---
 const regex = /hello/g;
+console.log(typeof regex); // "object"
 
 // ---- TESTS for Literals ----
 function testLiterals() {
@@ -130,6 +156,19 @@ function testLiterals() {
   console.log('All literal tests passed.');
 }
 testLiterals();
+
+//template literals are a powerful feature in JavaScript that allow for 
+// easier string interpolation and multi-line strings. They are defined using
+//  backticks (`) instead of single or double quotes. Template literals can contain placeholders,
+//  which are indicated by the ${expression} syntax. The expression inside the placeholder is evaluated 
+// and its result is included in the final string. This makes it much easier to create complex strings 
+// without having to concatenate multiple parts together.
+
+//example of template literals:
+const name = 'Alice';
+const age = 30;
+const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(greeting); // "Hello, my name is Alice and I am 30 years old."
 
 
 // ============================================================

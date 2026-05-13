@@ -1,6 +1,28 @@
 // --- HOISTING with var ---
 console.log(a); // undefined (no error, hoisted)
 var a = 5;
+
+{
+  //is this the block scope? No, var is function-scoped, so it does not create a new scope here. The variable 'd' is hoisted to the top of the function, but it is not initialized until the line where it is declared. Therefore, accessing it before that line results in a ReferenceError due to the TDZ.
+  // --- TDZ with var ---
+  console.log(d); // ❌ ReferenceError: Cannot access 'd' before initialization
+  var d = 20; // hoisted, but TDZ applies until this line
+  //why not hoisted only but also TDZ? because var is function-scoped, so it is hoisted to the top of the function, but it is not initialized until the line where it is declared. Therefore, accessing it before that line results in a ReferenceError due to the TDZ.
+  function test() {
+    var d = 30; // new 'd' in function scope, also hoisted
+    console.log(d); // 30 (d is accessible here)
+  }
+  test();
+  console.log(d); // 20 (outer 'd' is accessible here)
+}
+
+if(true){
+  // --- TDZ with var in block ---
+  console.log(e); // undefined (no error, hoisted but TDZ does not apply to var)
+  var e = 25; // hoisted, but TDZ does not apply to var
+}
+console .log(e); // 25 (e is accessible here, var is function-scoped)
+
 // --- TDZ with let ---
 // console.log(b); // ❌ ReferenceError: Cannot access 'b' before initialization
 let b = 10;
