@@ -1,0 +1,23 @@
+// --- HOISTING with var ---
+console.log(a); // undefined (no error, hoisted)
+var a = 5;
+// --- TDZ with let ---
+// console.log(b); // ❌ ReferenceError: Cannot access 'b' before initialization
+let b = 10;
+// --- TDZ with const ---
+// console.log(c); // ❌ ReferenceError
+const c = 15;
+// --- SCOPE differences ---
+if (true) {
+  var x = 1;  // function-scoped, leaks out
+  let y = 2;  // block-scoped
+  const z = 3; // block-scoped
+}
+console.log(x); // 1
+// console.log(y); // ❌ ReferenceError
+// console.log(z); // ❌ ReferenceError
+// --- const immutability ---
+const obj = { name: "Alice" };
+obj.name = "Bob"; // ✅ allowed (mutating property)
+console.log(obj.name); // Bob
+// obj = {};       // ❌ TypeError: Assignment to constant variable
