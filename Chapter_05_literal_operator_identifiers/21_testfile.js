@@ -1,1 +1,0 @@
-console.log("This is a test file for literal operator identifiers.");
