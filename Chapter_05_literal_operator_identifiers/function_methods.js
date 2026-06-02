@@ -214,4 +214,3 @@ console.log(user.greet()); // Output: "Hello, Alice!"
 | Invocation      | Called directly                   | Called on an object instance      |
 | Access to 'this'| Not applicable                      | Refers to the object it belongs to|
 */
-
