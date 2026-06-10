@@ -18,3 +18,8 @@ console.log(Z);
 const PI = 3.14;
 console.log(PI);
 // const is used to declare a constant variable. It cannot be reassigned or redeclared.
+
+{
+    var s = "shuvendu";
+}
+console.log(s);

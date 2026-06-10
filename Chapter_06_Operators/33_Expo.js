@@ -78,3 +78,22 @@ console.log(2 ** -10); // 1 / (2^10) = 1/1024 = 0.0009765625
 
 //intreview question: What is the result of (-2) ** 3?
 // The result of (-2) ** 3 is -8. This is because when a negative base is raised to an odd exponent, the result is negative. In this case, (-2) ** 3 is equivalent to (-2) * (-2) * (-2), which equals -8.
+
+// Number ** Number => Exponential of the number
+
+// let x = -4 ** 2 // This is an incorrect expression
+let y0 = -(4 ** 2);
+let z0 = 2 ** 5;
+let a0 = 3 ** 3;
+let b0 = 3 ** 2.5; 
+let c0 = 10 ** -2;
+let d0 = 2 ** 3 ** 2; 
+let e0 = NaN ** 2;
+
+console.log(y0);
+console.log(z0);
+console.log(a0);
+console.log(b0);
+console.log(c0);
+console.log(d0);
+console.log(e0);

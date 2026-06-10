@@ -172,7 +172,18 @@ console.log(greeting); // "Hello, my name is Alice and I am 30 years old."
 
 
 // ============================================================
-// 3. OPERATORS
+// 3. what is OPERATORS ?
+// operators are special symbols that perform operations on operands (values or variables) and return a result.
+// JavaScript has many types of operators, including:
+// - Arithmetic Operators
+// - Assignment Operators
+// - Comparison Operators
+// - Logical Operators
+// - Bitwise Operators
+// - String Operators
+// - Ternary (Conditional) Operator
+// - typeof & instanceof Operators
+// - Comma Operator
 // ============================================================
 
 // --- 3a. Arithmetic Operators ---
