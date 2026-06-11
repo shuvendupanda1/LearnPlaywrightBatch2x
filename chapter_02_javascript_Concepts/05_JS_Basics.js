@@ -21,5 +21,18 @@ console.log(PI);
 
 {
     var s = "shuvendu";
+    console.log(s); // var is function-scoped, so 's' is accessible within this block and outside of it.
 }
-console.log(s);
+console.log(s); // var is function-scoped, so 's' is accessible outside the block.
+
+{
+    let t = "shuvendu";
+    console.log(t); // let is block-scoped, so 't' is only accessible within this block.
+}
+// console.log(t); // This will cause an error because 't' is not accessible outside the block.
+
+{
+    const u = "shuvendu";
+    console.log(u); // const is block-scoped, so 'u' is only accessible within this block.
+}
+// console.log(u); // This will cause an error because 'u' is not accessible outside the block.
