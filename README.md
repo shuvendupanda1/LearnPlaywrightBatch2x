@@ -92,6 +92,17 @@ https://github.com/shuvendupanda1/LearnPlaywrightBatch2x.git
 | `45_post_Increment.js` | Post-increment (`a++`) — assign then increment |
 | `46_IQ_Increment.js` | Interview Q&A — increment operator |
 | `47_Advance_ID.js` | Advanced increment/decrement expressions |
+| `48_Interview_Questions_Literals_Operators_Keywords_Identifiers.js` | Comprehensive interview Q&A |
+| `JavaScript_Assignment_Operators.js` | Assignment operators deep dive |
+| `JavaScript_BigInt_Operators.js` | BigInt operators |
+| `JavaScript_Bitwise_Operators.js` | Bitwise operators (`&`, `\|`, `~`, `^`, `<<`, `>>`, `>>>`) |
+| `JavaScript_Comma_Operator.js` | Comma operator |
+| `JavaScript_Comparison_Operators.js` | Comparison operators deep dive |
+| `JavaScript_Logical_Operators.js` | Logical operators deep dive |
+| `JavaScript_Relational_Operators.js` | Relational operators (`in`, `instanceof`) |
+| `JavaScript_String_Operators.js` | String operators |
+| `JavaScript_Ternary_Operator.js` | Ternary operator deep dive |
+| `JavaScript_Unary_Operators.js` | Unary operators (`+`, `-`, `!`, `~`, `++`, `--`, `typeof`, `void`, `delete`) |
 
 ---
 
@@ -185,6 +196,12 @@ var returnValue = 10;
 - **Type**: `typeof`
 - **Nullish**: `??`
 - **Increment/Decrement**: Pre (`++a`) vs Post (`a++`)
+- **BigInt**: Arithmetic with `n` suffix
+- **Bitwise**: `&`, `|`, `~`, `^`, `<<`, `>>`, `>>>`
+- **Comma**: Multiple expressions in one statement
+- **Relational**: `in`, `instanceof`
+- **String**: `+` concatenation, properties/methods
+- **Unary**: `+`, `-`, `!`, `~`, `++`, `--`, `typeof`, `void`, `delete`
 
 ### Literals
 - Number literals (decimal, binary, octal, hex, BigInt)
