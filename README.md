@@ -225,6 +225,10 @@ var returnValue = 10;
 
 ---
 
+## Quick Reference
+
+See [Short_Notes.md](./Short_Notes.md) for a concise cheatsheet covering variables, data types, operators, hoisting, control flow, and common interview topics.
+
 ## How to Run Examples
 
 ```bash
