@@ -8,6 +8,11 @@ let age = 18;
 let canVote = age >= 18 ? "Yes" : "No";
 console.log(canVote); // Output: "Yes"
 
+
+const mark=100;
+const no= mark< 90 ?"yes" :"no 123";
+console.log(no);
+
 // Another example:
 let number = 5;
 let result = number % 2 === 0 ? "Even" : "Odd";
@@ -34,8 +39,8 @@ console.log(getStatus(false)); // Output: "Offline"
 
 //------------------------------------------------
 
-let rajkumar_age = 18;
-let rj_will_goa = rajkumar_age >= 18 ? "RJ will go goa" : "No Goa";
+let rajkumar_age1 = 18;
+let rj_will_goa = rajkumar_age1 >= 18 ? "RJ will go goa" : "No Goa";
 console.log(rj_will_goa)
 
 let a = 10;
@@ -73,8 +78,8 @@ console.log(isSKMale);
 //  Nested Ternary
 
 // Multiple Condition
-let age = 26;
-let is_pramod_goa = age > 26 ? "Yes, he will go" : "else he will not go";
+let age0 = 26;
+let is_pramod_goa = age0 > 26 ? "Yes, he will go" : "else he will not go";
 console.log(is_pramod_goa);
 
 
@@ -85,8 +90,12 @@ let is_pramod_d = age_pramod > 18 ? (age_pramod > 26 ? "Drink" : "No Drink") : "
 console.log(is_pramod_d);
 
 
-/// --------------------
+let age_shuvendu= 36;
+let is_shuvendu_date= age_shuvendu  > 18 ? "drink_shuvendu" :"not_drink_shuvendu";
+console.log(is_shuvendu_date);
 
+/// --------------------
+//multiple nested ternary also
 let statusCode = 404;
 let category =
     statusCode < 300 ? "Success" :
@@ -104,3 +113,16 @@ let feel = (temp >= 40) ? "Very Hot" :
         (temp >= 20) ? "Warm" :
             (temp >= 10) ? "Cool" : "Cold";
 console.log("7. Temperature:", temp, "| Feel:", feel);
+
+
+
+//max two number
+let a1 = 25, b = 40;
+let max1 = a1 > b ? a : b;
+console.log(max1); // 40
+
+
+//Max of three numbers
+let x = 10, y = 25, z = 18;
+let max = x > y ? (x > z ? x : z) : (y > z ? y : z);
+console.log(max); // 25

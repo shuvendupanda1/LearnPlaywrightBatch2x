@@ -1,4 +1,4 @@
-//Bitwise AND Operator ( & )
+//Bitwise AND Operator ( & ) not used then in playwright 
 let x = 5; 
 let y = 3; 
 console.log(x & y);
